@@ -33,6 +33,9 @@ $(document).ready(function(){
     var canvas2 = document.getElementById('accY');
     var canvas3 = document.getElementById('accZ');
     var canvas4 = document.getElementById('temp');
+    var canvas5 = document.getElementById('gyroX');
+    var canvas6 = document.getElementById('gyroY');
+    var canvas7 = document.getElementById('gyroZ');
 
     var data = {
         labels: [],
@@ -143,6 +146,88 @@ $(document).ready(function(){
         ]
     };
 
+    var data5 = {
+        labels: [],
+        datasets: [
+            {
+                label: "AccX",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75,75,192,0.4)",
+                borderColor: "rgba(75,75,192,1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 0,
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 0,
+                pointHitRadius: 10,
+                data: [],
+            }
+        ]
+    };
+
+    var data6 = {
+        labels: [],
+        datasets: [
+            {
+                label: "AccY",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75,75,192,0.4)",
+                borderColor: "rgba(75,75,192,1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 0,
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 0,
+                pointHitRadius: 10,
+                data: [],
+            }
+        ]
+    };
+
+    var data7 = {
+        labels: [],
+        datasets: [
+            {
+                label: "AccZ",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75,75,192,0.4)",
+                borderColor: "rgba(75,75,192,1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 0,
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 0,
+                pointHitRadius: 10,
+                data: [],
+            }
+        ]
+    };
+
+
     var count = 0
 
     setInterval(function(){
@@ -161,6 +246,18 @@ $(document).ready(function(){
         myLineChart4.data.datasets[0].data[count] = getData()[3];
         myLineChart4.data.labels[count] = count;
         myLineChart4.update();
+
+        myLineChart5.data.datasets[0].data[count] = getData()[4];
+        myLineChart5.data.labels[count] = count;
+        myLineChart5.update();
+
+        myLineChart6.data.datasets[0].data[count] = getData()[5];
+        myLineChart6.data.labels[count] = count;
+        myLineChart6.update();
+
+        myLineChart7.data.datasets[0].data[count] = getData()[6];
+        myLineChart7.data.labels[count] = count;
+        myLineChart7.update();
 
         if (count > 1000) {
             location.reload();
@@ -190,6 +287,21 @@ $(document).ready(function(){
 
     var myLineChart4 = Chart.Line(canvas4,{
         data:data4,
+        options:option
+    });
+
+    var myLineChart5 = Chart.Line(canvas5,{
+        data:data5,
+        options:option
+    });
+
+    var myLineChart6 = Chart.Line(canvas6,{
+        data:data6,
+        options:option
+    });
+
+    var myLineChart7 = Chart.Line(canvas7,{
+        data:data7,
         options:option
     });
 });

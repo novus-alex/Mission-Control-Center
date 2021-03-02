@@ -25,13 +25,20 @@
     </div>
     <div class="data_visualizer">
         <div class="data-frame" id="data-frame" onmouseover="this.style.borderColor='#22A2C2';" onmouseout="this.style.borderColor='#4b4b4b';" onclick="activate()">
-            <canvas width="175" height="50" class="accX" id="accX"></canvas>
-            <canvas width="175" height="50" class="accY" id="accY"></canvas>
+            <canvas width="175" height="75" class="accX" id="accX"></canvas>
+            <canvas width="175" height="75" class="accY" id="accY"></canvas>
+            <canvas width="175" height="75" class="accZ" id="accZ"></canvas>
         </div>
         <div class="data-frame2" id="data-frame" onmouseover="this.style.borderColor='#22A2C2';" onmouseout="this.style.borderColor='#4b4b4b';" onclick="activate()">
-            <canvas width="175" height="50" class="accZ" id="accZ"></canvas>
-            <canvas width="175" height="50" class="temp" id="temp"></canvas>
+            <canvas width="175" height="75" class="gyroX" id="gyroX"></canvas>
+            <canvas width="175" height="75" class="gyroY" id="gyroY"></canvas>
+            <canvas width="175" height="75" class="gyroZ" id="gyroZ"></canvas>
         </div>
+        <div class="data-frame3" id="data-frame" onmouseover="this.style.borderColor='#22A2C2';" onmouseout="this.style.borderColor='#4b4b4b';" onclick="activate()">
+            <canvas width="175" height="75" class="temp" id="temp"></canvas>
+        </div>
+
+
         <div class="info-frame" id="info-frame" onmouseover="this.style.borderColor='#22A2C2';" onmouseout="this.style.borderColor='#4b4b4b';" onclick="activate_info()">
             <div class="status-state"></div>
             <p class="info1" id="status-state1"></p>

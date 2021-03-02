@@ -76,20 +76,32 @@
     margin-top: 0px;
     color: #fff;
 	background-color: #3b3b3b;
-	width: 45%;
-	height: 600px;
+	width: 20%;
+	height: 550px;
 	border-style: solid;
 	border-color: #4b4b4b;
 	border-width: 1px;
 }
 
 .data-frame2 {
-    margin-left: 975px;
-    margin-top: -601.5px;
+    margin-left: 500px;
+    margin-top: -552px;
     color: #fff;
     background-color: #3b3b3b;
-    width: 45%;
-    height: 600px;
+    width: 20%;
+    height: 550px;
+    border-style: solid;
+    border-color: #4b4b4b;
+    border-width: 1px;
+}
+
+.data-frame3 {
+    margin-left: 950px;
+    margin-top: -552px;
+    color: #fff;
+    background-color: #3b3b3b;
+    width: 20%;
+    height: 550px;
     border-style: solid;
     border-color: #4b4b4b;
     border-width: 1px;
@@ -122,7 +134,7 @@
 
 .accX {
     padding-top: 75px;
-    margin-top: -20px;
+    margin-top: -40px;
     margin-left: 0px;
     margin-right: 40px;
 }
@@ -135,16 +147,39 @@
 
 .accZ {
     padding-top: 75px;
-    margin-top: -20px;
+    margin-top: -75px;
     margin-left: 0px;
     margin-right: 40px;
 }
 
 .temp {
+    padding-top: 75px;
+    margin-top: -40px;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+.gyroX {
+    padding-top: 75px;
+    margin-top: -40px;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+
+.gyroY {
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 40px;
 }
+
+.gyroZ {
+    padding-top: 75px;
+    margin-top: -75px;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
 
 .name-s1 {
     font-family: 'Noto Sans', sans-serif;
